@@ -1,25 +1,20 @@
-body {
-  font-size: 10px;
+td {
+  width: 100px;
+  height: 100px;
+   
 }
-h1 {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 10em;
-}
-p {
-  font-family: Arial, Helvetica, sans-serif, "Times New Roman", Times, serif;
-  font-size: 2em;
-}
-span {
-  font-size: 2em;
-}
-p {
-  font-weight: bold;
-  line-height: 2;
-  text-align: center;
-  text-decoration: underline;
+table {
+  margin: 0 auto;
 }
 
-p {
-  font-family: 'Balsamiq Sans', cursive;  
-  font-weight:bold;
+h1 {
+  text-align: center;
+}
+.vertical{
+  border-left:1px solid black;
+  border-right:1px solid black;
+}
+.horizontal{
+  border-top:1px solid black;
+  border-bottom:1px solid black;
 }
