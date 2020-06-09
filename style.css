@@ -18,3 +18,8 @@ p {
   text-align: center;
   text-decoration: underline;
 }
+
+p {
+  font-family: 'Balsamiq Sans', cursive;  
+  font-weight:bold;
+}
