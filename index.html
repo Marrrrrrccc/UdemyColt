@@ -3,68 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>My blog</title>
+    <link rel="stylesheet" href="bootstrap.css" />
+    <title>Bootstrap</title>
   </head>
   <body>
-    <div class="post">
-      <div class="date">november 23 2015</div>
-      <h2>This is my first article</h2>
-      <p class="quote">
-        Culpa qui labore minim sunt reprehenderit velit pariatur irure aliqua do
-        magna ea. Eiusmod ipsum commodo magna adipisicing nisi et consequat elit
-        incididunt velit deserunt. Et ad veniam ad laboris. Laboris irure amet
-        anim eiusmod et officia cillum sit in id irure veniam. Aliqua voluptate
-        enim nostrud exercitation. Labore exercitation reprehenderit
-        exercitation proident sint ut fugiat ipsum labore minim eu. Exercitation
-        ut duis dolore et veniam est sint laborum nostrud dolor ut in
-        consectetur consequat.
-      </p>
-
-      <p>
-        Dolore occaecat cupidatat deserunt do dolor. Et aliqua irure do id
-        veniam aliqua. Tempor incididunt duis exercitation do incididunt enim
-        proident.
-      </p>
-
-      <p>
-        Dolore aliqua consequat culpa ea qui laboris nisi. Lorem id sint ipsum
-        ut. Exercitation irure veniam incididunt sit. Ullamco labore duis ex ut.
-        Lorem pariatur exercitation non Lorem fugiat incididunt laboris qui
-        irure consectetur.
-      </p>
-      <hr />
-    </div>
-    <div class="post">
-      <div class="date">november 23 2015</div>
-      <h2>This is my another article</h2>
-      <p class="quote">
-        Culpa qui labore minim sunt reprehenderit velit pariatur irure aliqua do
-        magna ea. Eiusmod ipsum commodo magna adipisicing nisi et consequat elit
-        incididunt velit deserunt. Et ad veniam ad laboris. Laboris irure amet
-        anim eiusmod et officia cillum sit in id irure veniam. Aliqua voluptate
-        enim nostrud exercitation. Labore exercitation reprehenderit
-        exercitation proident sint ut fugiat ipsum labore minim eu. Exercitation
-        ut duis dolore et veniam est sint laborum nostrud dolor ut in
-        consectetur consequat.
-      </p>
-
-      <p>
-        Dolore occaecat cupidatat deserunt do dolor. Et aliqua irure do id
-        veniam aliqua. Tempor incididunt duis exercitation do incididunt enim
-        proident.
-      </p>
-
-      <p>
-        Dolore aliqua consequat culpa ea qui laboris nisi. Lorem id sint ipsum
-        ut. Exercitation irure veniam incididunt sit. Ullamco labore duis ex ut.
-        Lorem pariatur exercitation non Lorem fugiat incididunt laboris qui
-        irure consectetur.
-      </p>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Hello Bootstrap</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus
+          deserunt laudantium doloribus? Exercitationem, soluta. Harum neque
+          deleniti voluptatibus accusantium hic? Animi id, soluta porro eveniet
+          necessitatibus fugiat molestiae exercitationem. Et!
+        </p>
+        <button class="btn btn-success btn-lg">Hi there</button>
+      </div>
+      <h1>Bootstrap basics</h1>
+      <button class="btn btn-success btn-sm">Click me!</button>
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+          <small id="emailHelp" class="form-text text-muted"
+            >We'll never share your email with anyone else.</small
+          >
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+          />
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label" for="exampleCheck1"
+            >Check me out</label
+          >
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <form class="form-inline">
+        <div class="form-group mb-2">
+          <label for="staticEmail2" class="sr-only">Email</label>
+          <input
+            type="text"
+            readonly
+            class="form-control-plaintext"
+            id="staticEmail2"
+            value="email@example.com"
+          />
+        </div>
+        <div class="form-group mx-sm-3 mb-2">
+          <label for="inputPassword2" class="sr-only">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="inputPassword2"
+            placeholder="Password"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary mb-2">
+          Confirm identity
+        </button>
+      </form>
     </div>
   </body>
 </html>
