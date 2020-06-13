@@ -1,19 +1,28 @@
-function isEven(x) {
-  if (x % 2 === 0) {
-    return true;
-  } else {
-    return false;
+var todos = [];
+var input = prompt("What would you like to do");
+
+while (input !== "quit") {
+  if (input === "list") {
+    list();
+  } else if (input === "new") {
+    add();
+  } else if (input === "delete") {
+    deleteTodo();
   }
+  input = prompt("What would you like to do");
 }
-// isEven(4);
-function factorial(num) {
-  var result = 1;
-  for (var i = 2; i <= num; i++) {
-    result *= i;
-  }
-  return result;
+console.log("Ok, you quit the app");
+function list() {
+  todos.forEach((element, i) => {
+    console.log(i + ": " + element);
+  });
 }
-function kebabToSnake(str) {
-  var newStr = str.replace(/-/g, "_");
-  return newStr;
+function add() {
+  var newTodo = prompt("Enter new to do");
+  todos.push(newTodo);
+}
+function deleteTodo() {
+  var index = prompt("What you wanna delete?");
+  todos.splice(index, 1);
+  console.log("deleted todo");
 }
