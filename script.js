@@ -1,28 +1,41 @@
-var todos = [];
-var input = prompt("What would you like to do");
-
-while (input !== "quit") {
-  if (input === "list") {
-    list();
-  } else if (input === "new") {
-    add();
-  } else if (input === "delete") {
-    deleteTodo();
+var arr = [];
+function printReverse(arr) {
+  for (var i = arr.length - 1; i >= 0; i--) {
+    console.log(arr[i]);
   }
-  input = prompt("What would you like to do");
 }
-console.log("Ok, you quit the app");
-function list() {
-  todos.forEach((element, i) => {
-    console.log(i + ": " + element);
+
+function isUniform(array) {
+  var counter = array[0];
+  for (var i = 1; i < array.length; i++) {
+    if (counter !== array[i]) {
+      return false;
+    }
+  }
+  return true;
+}
+var a = [];
+var result = 0;
+function sumArray(a) {
+  for (var i = 0; i < a.length; i++) {
+    result = result + a[i];
+  }
+  return result;
+}
+function sumArray1(arr) {
+  var total = 0;
+  arr.forEach((element) => {
+    total += element;
   });
+  return total;
 }
-function add() {
-  var newTodo = prompt("Enter new to do");
-  todos.push(newTodo);
-}
-function deleteTodo() {
-  var index = prompt("What you wanna delete?");
-  todos.splice(index, 1);
-  console.log("deleted todo");
+
+function max(arr) {
+  var max = arr[0];
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] > max) {
+      max = arr[i];
+    }
+  }
+  return max;
 }
