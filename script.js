@@ -1,41 +1,45 @@
-var arr = [];
-function printReverse(arr) {
-  for (var i = arr.length - 1; i >= 0; i--) {
-    console.log(arr[i]);
-  }
-}
+var movies = [
+  {
+    title: "In burges",
+    rating: "5 stars",
+    hasWatched: true,
+  },
 
-function isUniform(array) {
-  var counter = array[0];
-  for (var i = 1; i < array.length; i++) {
-    if (counter !== array[i]) {
-      return false;
-    }
-  }
-  return true;
-}
-var a = [];
-var result = 0;
-function sumArray(a) {
-  for (var i = 0; i < a.length; i++) {
-    result = result + a[i];
-  }
-  return result;
-}
-function sumArray1(arr) {
-  var total = 0;
-  arr.forEach((element) => {
-    total += element;
-  });
-  return total;
-}
+  {
+    title: "Frozen",
+    rating: "4.5 stars",
+    hasWatched: false,
+  },
 
-function max(arr) {
-  var max = arr[0];
-  for (var i = 0; i < arr.length; i++) {
-    if (arr[i] > max) {
-      max = arr[i];
-    }
+  {
+    title: "Mad max ",
+    rating: "5 stars",
+    hasWatched: true,
+  },
+  {
+    title: "Les Miserables",
+    rating: "3.5 stars",
+    hasWatched: false,
+  },
+];
+for (var i = 0; i < movies.length; i++) {
+  if (movies[i].hasWatched) {
+    console.log(
+      "You have watched " +
+        '"' +
+        movies[i].title +
+        '"' +
+        " - " +
+        movies[i].rating
+    );
+  } else {
+    console.log(
+      "You have not seen " +
+        '"' +
+        movies[i].title +
+        '"' +
+        " - " +
+        movies[i].rating
+    );
   }
-  return max;
 }
