@@ -1,3 +1,7 @@
-.winner {
+.done {
+  color: gray;
+  text-decoration: line-through;
+}
+.selected {
   color: green;
 }
