@@ -3,7 +3,6 @@ var color = generateRandomColors(numSquares);
 var pickColor = pickedColor();
 var squares = document.querySelectorAll(".square");
 var colorDisplay = document.querySelector("#colorDisplay");
-
 var resetButton = document.querySelector("#resetButton");
 var message = document.querySelector("#message");
 var h1 = document.querySelector("h1");
